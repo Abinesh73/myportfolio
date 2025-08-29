@@ -24,7 +24,7 @@ const Intro = () => {
   return (
     <section id="intro">
         <div className="introcontent">
-             <span className="hello">Hello,</span>
+             <span className="hello">Hello,a</span>
              <span className="introtxt">I,m <span className="introname">Abinesh </span><br/></span>
              <div class="text-3"><span class="typing"></span><span class="typed-cursor">|</span></div>
              <Link to="aboutsection" smooth={true} duration={500}><button className="btn">About Me</button></Link>
