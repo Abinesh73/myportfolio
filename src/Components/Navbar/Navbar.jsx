@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
          <Link to="contact" smooth={true} duration={500}> <button className='desktopmenubtn'><img src={contactimg} alt="" className="desktopmenuimg" />Contact Me</button></Link>
           <img src={menu} alt="logo" className='mobmenu' onClick={()=>setshowmenu(!showmenu)} />
-          <div className='Navmenu' style={{display: showmenu?'flex':'none'}}>
+          <div className={`Navmenu ${showmenu ? 'show' : ''}`}>
            <Link to="intro" smooth={true} duration={500}   activeClass="active"   spy={true}    className='listitem'onClick={()=>{setshowmenu(false)}}>Home</Link>
         <Link to="about" smooth={true} duration={500}   activeClass="active"   spy={true}    className='listitem'onClick={()=>{setshowmenu(false)}}>About</Link>
             <Link to="skills"  smooth={true} duration={500}   activeClass="active"   spy={true}    className='listitem'onClick={()=>{setshowmenu(false)}}>Skills</Link>
