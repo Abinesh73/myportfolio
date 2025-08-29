@@ -16,9 +16,11 @@ const About = () => {
         </div>
         <div className="text">I'm <span class="highlight">Abinesh</span></div>
        <span className="skillDesc">I am a passionate and dynamic Information Technology graduate with a strong foundation in various IT domains. Eager to contribute my skills and knowledge to innovative projects, I am dedicated to staying updated with the latest industry trends.</span>
+        <Link to="Skillsection" smooth={true} duration={500}><button className="btn1">Skills</button></Link>
+
       </div>
+
     </div>
-             <Link to="Skillsection" smooth={true} duration={500}><button className="btn1">Skills</button></Link>
   </section>
   </Element>
   )

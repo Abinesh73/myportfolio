@@ -118,12 +118,12 @@
   }
 
   .about-content .left img {
-    width: 60%;               /* smaller image */
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 6px;
+    display: block;          /* make it block element */
+    width: 70%;              /* shrink size on mobile */
+    max-width: 250px;        /* limit max width */
+    height: auto;            /* maintain aspect ratio */
+    margin: 0 auto;          /* center horizontally */
+    border-radius: 6px;      /* keep rounded corners */
   }
 
   .about-content .right {
@@ -138,20 +138,15 @@
   }
 
   .skillDesc {
-    width: 100%;              /* take full width of right container */
-    font-size: 0.95rem;
-    text-align: justify;      /* justified content */
-    margin: 0;                /* remove auto centering */
-    margin-top: 0.5rem;       /* spacing from .text */
-  }
+        width: 100%;                 /* full width in mobile */
+        margin-left: 0;              /* no extra offset */
+    }
 
-    .btn1 {
-    font-size: 0.95rem;
-    padding: 0.6rem 1.2rem;
-    display: inline-block;  
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    align-self: flex-start;   /* key: align left edge with parent flex */
-  }
+     .btn1 {
+        align-self: flex-start;      /* keep button aligned with skillDesc start */
+        margin-left: 0;              /* remove fixed margin */
+        font-size: 0.9rem;           /* optional smaller size */
+        padding: 0.5rem 1rem;        /* scale padding */
+    }
 
 }
