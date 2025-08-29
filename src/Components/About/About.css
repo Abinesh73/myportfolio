@@ -110,3 +110,48 @@
     margin-bottom: 1rem;
     
 }
+@media screen and (max-width: 720px) {
+  .about-content {
+    flex-direction: column;   /* stack image and text */
+    align-items: center;      /* center image */
+    gap: 1.5rem;
+  }
+
+  .about-content .left img {
+    width: 60%;               /* smaller image */
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+
+  .about-content .right {
+    width: 90%;               /* text container almost full width */
+    display: flex;
+    flex-direction: column;   /* stack content vertically */
+    align-items: flex-start;  /* align children to left */
+  }
+
+  .about-content .right .text {
+    font-size: 1.2rem;        /* smaller text */
+  }
+
+  .skillDesc {
+    width: 100%;              /* take full width of right container */
+    font-size: 0.95rem;
+    text-align: justify;      /* justified content */
+    margin: 0;                /* remove auto centering */
+    margin-top: 0.5rem;       /* spacing from .text */
+  }
+
+    .btn1 {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    display: inline-block;  
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;   /* key: align left edge with parent flex */
+  }
+
+}
