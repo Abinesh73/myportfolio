@@ -140,3 +140,53 @@
     text-align: justify;
       margin-left: 12.3rem;  /* keeps it aligned and neat */
 }
+
+/* ------------------- Mobile Responsiveness for Reachout + Form + Links ------------------- */
+@media screen and (max-width: 720px) {
+  /* Reachout title and text */
+  .reachout-title,
+  .reachout-text,
+  .contactform {
+    margin: 0 5rem 1rem;  /* small left/right margin */
+    max-width: 95%;       /* full-width feel */
+  }
+
+  .reachout-title {
+    font-size: 1.2rem;
+    text-align: left;     /* align left like "Download CV" */
+  }
+
+  .reachout-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: justify;
+      /* smaller side margin = more width */
+    max-width: 100%;
+  }
+
+  .contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* inputs aligned left */
+    gap: 0.75rem;
+  }
+
+  .contactform .sumbitbtn {
+    align-self: flex-start; /* button aligned left */
+  }
+
+  /* Social links */
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center icons */
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .links .link {
+    height: 2.5rem;          /* smaller icons for mobile */
+    width: 2.5rem;
+    margin: 0.25rem;
+  }
+}
