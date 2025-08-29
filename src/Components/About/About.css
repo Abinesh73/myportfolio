@@ -122,7 +122,7 @@
     width: 70%;              /* shrink size on mobile */
     max-width: 250px;        /* limit max width */
     height: auto;            /* maintain aspect ratio */
-    margin: 0 auto;          /* center horizontally */
+    margin: 0 -1rem;          /* center horizontally */
     border-radius: 6px;      /* keep rounded corners */
   }
 
