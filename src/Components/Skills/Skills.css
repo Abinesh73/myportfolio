@@ -1,0 +1,153 @@
+.services{
+  overflow: hidden;
+  width: 100vw;
+  margin: 0 auto;
+   background: rgb(30, 30, 30);
+   color: white;
+  padding-top: 2rem;
+}
+.skills .title::after{
+    content: "what i know";
+
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 50%;
+}
+.skills-content .right .css::before{
+    width: 50%;
+}
+.skills-content .right .js::before{
+    width: 50%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .c::before{
+    width: 50%;
+}
+.services, .teams{
+    color:#fff;
+    background: #111;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i provide";
+     color: red;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.serv-content {
+    display: flex;            /* Use flex layout */
+    flex-wrap: wrap;          /* Wrap to next row on small screens */
+    gap: 2rem;                /* Space between cards */
+    justify-content: center;  /* Center cards horizontally */
+}
+.serv-content {
+    display: flex;            /* Use flex layout */
+    flex-wrap: wrap;          /* Wrap to next row on small screens */
+    gap: 2rem;                /* Space between cards */
+    justify-content: center;  /* Center cards horizontally */
+}
+
+.card {
+    flex: 1 1 500px;          /* Grow/shrink, base width 250px */
+    max-width: 400px;         /* Optional max width */
+}
+.title{
+  margin-top: 2rem;
+   font-size: 3rem;
+    font-weight: 600;
+}
+.services{
+  padding-bottom: 7rem;
+}

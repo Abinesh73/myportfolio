@@ -1,0 +1,112 @@
+.about{
+  overflow: hidden;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  padding-top: 2rem;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+#skills.bg{
+    width: 50%;
+    position: absolute;
+}
+.about .title::after{
+    content: "who i am";
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: crimson;
+}
+.about .about-content .left{
+    width: 50%;
+}
+.about .about-content .left img{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+.text .highlight {
+    font-weight: bold;
+    animation: colorCycle 3s infinite;
+}
+
+/* Animation for cycling colors */
+@keyframes colorCycle {
+    0% { color: crimson; }      /* Color 1 */
+    33% { color: #1E90FF; }     /* Color 2 (Dodger Blue) */
+    66% { color: #FF8C00; }     /* Color 3 (Dark Orange) */
+    100% { color: crimson; }    /* Loop back to Color 1 */
+}
+.text{
+    padding-top: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+ }
+ .skillDesc{
+     font-size: 1rem;
+     font-weight: 400;
+       width: 50%;           /* Set width to 50% */
+    display: block;       /* Ensure it behaves like a block element */
+    text-align: justify; 
+ }
+ .btn1{
+    background: rgb(220,20,60);
+    color: white;
+    margin: 0rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-left: 12.2rem;
+    margin-bottom: 1rem;
+    
+}
