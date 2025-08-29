@@ -5,7 +5,7 @@ import facebook from '../../assets/facebook-icon.png'
 import instagram from '../../assets/instagram.png'
 import linkedin from '../../assets/linkedin.png'
 import emailjs from "emailjs-com";
-
+import Resume from '../../Abinesh__Resume.pdf';
 const Contact = () => {
   function sendEmail(e) {
   e.preventDefault();
@@ -61,7 +61,13 @@ const Contact = () => {
         </div>
       </div>
       <div>
-         <a href="/Abinesh_Resume.pdf" download="" className="button-area">Download CV</a>
+          <a 
+          href={Resume} 
+          download="Abinesh__Resume.pdf" 
+          className="button-area"
+        >
+          Download CV
+        </a>
       </div>
     </div>
   </div>
