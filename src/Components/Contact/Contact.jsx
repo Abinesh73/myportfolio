@@ -69,22 +69,18 @@ const Contact = () => {
         >
           Download CV
         </a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h3 className="reachout-title">Let’s Connect</h3>
+         <h3 className="reachout-title">Let’s Connect</h3>
     <p className="reachout-text">
   Thanks for visiting my portfolio! 🚀 I’m excited to kickstart my career and open to job opportunities.  
   If you think I’d be a good fit for your team, feel free to reach out!
-</p></div>
+</p>
   <form className='contactform' onSubmit={sendEmail}>
     <input type='Text'  name="name"className='name' placeholder='Enter your name' required></input>
      <input type="email" name="email" className="email" placeholder="Enter your email" required></input>
      <textarea name="message" className='msg' rows="6" placeholder="Your Message" required> </textarea>
      <button type='Submit' className='sumbitbtn'>Send</button>
   </form>
-  <div className='links'>
+   <div className='links'>
     <a 
   href="https://www.facebook.com/people/Wipper/pfbid0LmTLtqydibmbU1JPZPxRqiKRRuxN6j1Liqi6qdvEeZx6iwXkxCvPD5nEoAjCHFaQl/?sk=about" 
   target="_blank" 
@@ -98,6 +94,13 @@ const Contact = () => {
   target="_blank" 
   rel="noopener noreferrer"><img src={linkedin} alt="Instagram" className="link" /></a> 
   </div>
+      </div>
+    </div>
+  </div>
+  <div>
+   </div>
+
+ 
 </section>
 </Element>
   )

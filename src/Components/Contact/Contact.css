@@ -71,15 +71,19 @@
 .contact .title {
   margin-top: 0;   /* only affect inside contact */
 }
-.contactform{
-   margin: 1rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   width: 90vw;
-   max-width: 60vw;
-   margin-left: 3rem;
+.contactform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;          /* take full width of its parent column */
+  max-width: 600px;     /* same readable width as text */
+  margin: 0;            /* align with title */
+}
+.contactform button {
+  align-self: center;   /* center only the button */
+  margin-top: 1rem;     /* space above button */
 }
 .name,.email,.msg{
   font-size: medium;
@@ -102,66 +106,65 @@
    color: white;
   cursor: pointer;
 }
-.links{
+.links {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-   width: 100%;
-  max-width: 63.5rem;
-  
+  justify-content: center;   /* ✅ center horizontally */
+  align-items: center;       /* ✅ center vertically in the row */
+  gap: 1.5rem;               /* ✅ equal spacing between icons */
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1.5rem;
 }
-.link{
-  object-fit: cover;
+
+.link {
   height: 3rem;
   width: 3rem;
-  margin: 0 0.75rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+
 .reachout-title {
   font-size: 20px;
     font-weight: 600;
   margin-top: 15px;
   margin-bottom: 8px;
    /* dark professional shade */
-  margin-left: 12.3rem;
+  
 }
 
 .reachout-text {
   font-size: 15px;
   line-height: 1.6;
   /* softer than black for readability */
-    width: 40%;           /* Set width to 50% */
+     max-width: 600px;   /* keeps it readable */
+  width: 100%;        /* Set width to 50% */
     display: block;       /* Ensure it behaves like a block element */
     text-align: justify;
-      margin-left: 12.3rem;  /* keeps it aligned and neat */
+       /* keeps it aligned and neat */
 }
 
 /* ------------------- Mobile Responsiveness for Reachout + Form + Links ------------------- */
 @media screen and (max-width: 720px) {
   /* Reachout title and text */
-  .reachout-title,
+   .reachout-title,
   .reachout-text,
   .contactform {
-    margin: 0 5rem 1rem;  /* small left/right margin */
-    max-width: 95%;       /* full-width feel */
+    margin: 0 auto 1rem;   /* center horizontally */
+    padding: 0 1rem;       /* flexible side padding */
+    max-width: 100%;       /* take full width on mobile */
   }
 
   .reachout-title {
     font-size: 1.2rem;
-    text-align: left;     /* align left like "Download CV" */
+    text-align: left;      /* aligns nicely with form & button */
   }
 
   .reachout-text {
     font-size: 0.9rem;
     line-height: 1.5;
-    text-align: justify;
-      /* smaller side margin = more width */
-    max-width: 100%;
+    text-align: justify;   /* keeps it readable */
   }
 
      .contactform {
