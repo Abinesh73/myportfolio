@@ -145,56 +145,48 @@
        /* keeps it aligned and neat */
 }
 
-/* ------------------- Mobile Responsiveness for Reachout + Form + Links ------------------- */
 @media screen and (max-width: 720px) {
-  /* Reachout title and text */
-   .reachout-title,
-  .reachout-text,
-  .contactform {
-    margin: 0 auto 1rem;   /* center horizontally */
-    padding: 0 1rem;       /* flexible side padding */
-    max-width: 100%;       /* take full width on mobile */
+  .contact .contact-content .column {
+    width: 100%;
   }
 
-  .reachout-title {
-    font-size: 1.2rem;
-    text-align: left;      /* aligns nicely with form & button */
-  }
-
+  /* Left-align text, form, and button */
+  .contactform,
+  .reachout-title,
   .reachout-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    text-align: justify;   /* keeps it readable */
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    margin: 0 0 1rem 0rem; 
+    padding-left: 0; /* avoid double padding */
+    box-sizing: border-box;
   }
 
-     .contactform {
-    margin: 0 4rem 1rem;   /* same margin as reachout-title */
-    max-width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;  /* inputs take full width inside */
-    gap: 0.75rem;
+  .contactform input,
+  .contactform textarea {
+    margin: 0.5rem 0; /* spacing between inputs */
   }
 
-  .contactform .sumbitbtn {
-    align-self:center;
+  .submitbtn {
+    align-self: flex-start; /* left align button */
+    margin-left: 1rem;      /* optional padding to match text */
   }
 
-  /* Social links responsive */
-   .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* ensures links are centered */
-    align-items: center;     /* vertical centering */
-    gap: 0.75rem;
-    margin: 1rem 2rem;       /* auto keeps it centered */
-    width: 100%;  
-    max-width: 85%;           /* take full row width */
+  .button-area {
+    justify-content: flex-start; /* left align CV button */
+    margin-left: 1rem;
+  }
+
+  /* Social links left-aligned */
+  .links {
+    justify-content: center;   /* center links horizontally */
+    margin: 1rem auto 0 auto;  /* auto left/right margin to center */
+    gap: 1rem;                 /* keep spacing between icons */
   }
 
   .links .link {
-    height: 2.5rem;
     width: 2.5rem;
-    margin: 0.25rem;
+    height: 2.5rem;
   }
 }
+
